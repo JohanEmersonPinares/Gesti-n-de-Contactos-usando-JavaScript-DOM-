@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="stylesheet" href="src/index.css">
+  </head>
+  <body>
+    <div id="root">
+    <div id="app">
+      <form onsubmit="addContact" id="contact-form">
+        <h1>Gestión de Contactos</h1>
+        <label>
+          <input name="value" type="text" id="contactName" placeholder="Ingresa nombre del contacto" />
+          <button id="addContact" >Agregar Contacto</button>
+        </label>
+      </form>      <section>
+        <h1>Lista de Contactos</h1>
+        <p id="contactCount">Número de contactos: 0</p>
+        <ul id="contactList">
+          <!-- Aquí aparecerán los contactos -->
+        </ul>
+      </section>
+    </div>
+  </div>
+    <script type="module" src="/src/main.jsx"></script>
+
+  </body>
+</html>
